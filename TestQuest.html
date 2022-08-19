@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+  <body>   
+    <section> 
+          <div class="container">
+            <div class="columns is-centered">
+              <div class="column is-6-tablet is-6-desktop is-8-widescreen">
+                <form class="box js_form" method="POST">
+                    <div class="control">
+                        <label class="radio">
+                            <p><b>Вы регистрируетесь как</b></p>
+                            <input type="radio" name="foobar">
+                                <b>Покупатель</b>
+                        </label><br>
+                        <label class="radio">
+                            <input type="radio" name="foobar" checked>
+                                <b>Поставщик</b>
+                        </label>
+                    </div><br><br>
+                    <div class="field">
+                        <p>Эл. почта</p>
+                        <input class="input checkIn" type="email" placeholder="Введите почту" required>
+                    </div>                    
+                    <div class="field">
+                        <label class="label">Название организации</label>
+                        <p>ИП или Юр.лицо</p>
+                        <input class="input checkIn" type="text" placeholder="ИП" required>
+                        <p>ИНН</p>
+                        <input class="input checkIn" type="text" placeholder="ИНН" required>
+                    </div>
+                    <div class="field">
+                        <label class="label">Фактический адрес</label>
+                        <p>Ваш город</p>
+                        <input class="input checkIn" type="text" placeholder="Москва" required>
+                        <p>Улица</p>
+                        <input class="input checkIn" type="text" placeholder="Ленина" required>
+                        <p>Дом</p>
+                        <input class="input checkIn" type="text" required>
+                        <p>Строение</p>
+                        <input class="input" type="text" required>
+                        <p>Телефон</p>
+                        <input class="input checkIn" type="tel" required>
+                        <p>Сайт Вашей компании</p>
+                        <input class="input" type="text" required>
+                        <label class="label">Виды деятельности</label>
+                        <div class="row">
+                            <p>Магазин</p>
+                            <input type="checkbox">
+                        </div>
+                        <div class="row">
+                            <p>Региональная сеть магазинов</p>
+                            <input type="checkbox">
+                        </div>
+                        <div class="row">
+                            <p>Федеральная сеть магазинов</p>
+                            <input type="checkbox">
+                        </div>
+                        <div class="row">
+                            <p>Интернет-магазин</p>
+                            <input type="checkbox">
+                        </div>
+                        <div class="row">
+                            <p>Автосервис</p>
+                            <input type="checkbox">
+                        </div>
+                        <div class="row">
+                            <p>Прочее</p>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <script src="https://www.google.com/recaptcha/api.js"></script>
+                            <div style="transform:scale(0.8); transform-origin:0;" class="g-recaptcha" data-sitekey="123"></div>
+                        </div>
+                        <div>
+                            <button class="button is-link" id="signup">Отправить заявку</button>
+                        </div>                        
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>    
+    </section>  
+    
+    <!-- modal -->
+    <div class="modal">
+        <div class="modal-background">
+            <div class="modal-content has-background-black py-5 px-5">
+                <h3 class="title mb-6">Успех</h3>
+                <p>ваша регистрация прошла успешно</p>
+            </div>
+        </div>        
+    </div>
+
+    <!-- modal js -->
+    <script src="D:\form\sd.js"></script>
+
+  </body>
+</html>
